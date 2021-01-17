@@ -15,11 +15,11 @@
     <nav>
       <ul>
         <li><a href="#Introduction">Introduction</a></li>
-        <li><a href="#My Goals">My Goals</a></li>
+        <li><a href="#My-Goals">My Goals</a></li>
         <li><a href="#Projects">Projects</a></li>
         <li><a href="#Hobbies">Hobbies</a></li>
-        <li><a href="#Some Other Stuff About Me">Some Other Stuff</a></li>
-        <li><a href="#Get in Touch">Get in Touch</a></li>
+        <li><a href="#Some-Other-Stuff-About-Me">Some Other Stuff</a></li>
+        <li><a href="#Get-in-Touch">Get in Touch</a></li>
       </ul>
       <form>
          <input type="search" name="q" placeholder="Search query">
@@ -35,7 +35,7 @@
               width = "200" 
               height = "250"/>
               <aside>
-                <i> <pre>That was the only time I went to the beach in SD.</pre></i>
+                <pre><i>That was the only time I went to the beach in SD.</i></pre>
               </aside>
         <p>
           I am a third year Computer Science student studying here at UC San Diego. 
@@ -76,7 +76,6 @@
                         <iframe width="560" 
                               height="315" 
                               src="https://www.youtube.com/embed/z0qW9P-uYfM" 
-                              frameborder="0" 
                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                               allowfullscreen>
                       </iframe>
@@ -87,7 +86,7 @@
                       <div id = "audio-mp3">
                         <audio 
                           controls
-                          src="Don't Go Breaking My Heart (Remastered).mp3">
+                          src="Don't%20Go%20Breaking%20My%20Heart%20(Remastered).mp3">
                           Your browser does not support the audio element.
                         </audio>
                       </div>
@@ -100,7 +99,7 @@
       </section>
       <hr>
       <section>
-        <h2 id = "My Goals">My Goals</h2>
+        <h2 id = "My-Goals">My Goals</h2>
         <p>Here are a couple of goals I set for myself in the short-term and long-term:</p>
         <h3>Short-term</h3>
         <ol>
@@ -160,9 +159,9 @@
           <table>
             <caption>Most Recent Books I've Read</caption>
             <colgroup>
-              <col span = "5" class="Genre">
-              <col span = "5" class="Book">
-              <col span = "5" class="Author">
+              <col span = "3" class="Genre">
+              <col span = "3" class="Book">
+              <col span = "3" class="Author">
           </colgroup>
             <tr>
               <th scope = "col" style = "border:1px solid rgb(199, 199, 199)">Genre</th>
@@ -221,7 +220,7 @@
       </section>
       <hr>
       <section>
-        <h2 id = "Some Other Stuff About Me">Some Other Stuff About Me</h2>
+        <h2 id = "Some-Other-Stuff-About-Me">Some Other Stuff About Me</h2>
         <ul>
           <li>
             My favorite color is <span style = "color:red">red</span>. What's yours?
@@ -358,7 +357,7 @@
       </section>
       <hr>
       <section>
-        <h2 id = "Get in Touch">Get in Touch</h2>
+        <h2 id = "Get-in-Touch">Get in Touch</h2>
         <p>I'm always down to meet new people! You can use the form below to get in touch!</p>
         <form action="mailto:someone@example.com" 
               method="post"
@@ -367,10 +366,10 @@
               <fieldset>
                 <legend>Input your name and message!:</legend>
                 <label for="name">Your Name:</label><br>
-                <input type = "text" name = "name"><br>
+                <input type = "text" name = "name" id = "name"><br>
                 <label for="email"> Type in my email address:</label><br>
                 <input type = "email" id = "email" pattern = ".+@ucsd.edu" placeholder="hbattu@ucsd.edu"><br>
-                <label type = "comment">Message</label><br>
+                <label for = "message">Message</label><br>
                 <textarea id = "message" name = "message" rows="5" cols="33" placeholder="Type in your message here!"></textarea><br>
                 <button type="submit" form="email-form" value="Send">Send</button>
               </fieldset>
