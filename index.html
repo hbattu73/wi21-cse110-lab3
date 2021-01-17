@@ -1,10 +1,410 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
+    <meta charset="utf-8"/>
+    <title>Hemanth's Github Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
-    <p>This is my page</p>
+    <header> 
+      <h1>Welcome to Hemanth's Github Page!</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#Introduction">Introduction</a></li>
+        <li><a href="#My Goals">My Goals</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Hobbies">Hobbies</a></li>
+        <li><a href="#Some Other Stuff About Me">Some Other Stuff</a></li>
+        <li><a href="#Get in Touch">Get in Touch</a></li>
+      </ul>
+      <form>
+         <input type="search" name="q" placeholder="Search query">
+         <input type="submit" value="Go!">
+       </form>
+    </nav>
+    <main>
+      <section>
+        <h2 id = "Introduction">Introduction</h2>
+        <img src = "beachshot.jpg"
+              alt = "Picture of me" 
+              class = 'beachshot' 
+              width = "200" 
+              height = "250"/>
+              <aside>
+                <i> <pre>That was the only time I went to the beach in SD.</pre></i>
+              </aside>
+        <p>
+          I am a third year Computer Science student studying here at UC San Diego. 
+          I was born in India, but grew up in Fremont, CA for almost my entire life. 
+          In the unlikely scenario that you are interested, here are a couple more things about me:
+        </p>
+        <ul>
+          <li>
+            I absolutely <em>love</em> watching sports. My favorite sport teams are the <i>Golden State Warriors</i> and the <i>San Francisco 49ers</i>. 
+            I also keep up to date with track and field news, especially the sprinting events.
+          </li>
+          <li>
+            Not really a social media guy. <b>Reddit</b> is the only form of social media that I use.</li>
+          <li>
+            In my free time, I love to walk or jog on the trails in my hometown
+            <ul>
+              <li>
+                My frequent choice of trails are the ones in <b>Coyote Hills</b>
+                <figure>
+                  <img src="https://goldengateaudubon.org/wp-content/uploads/CH-Green-Hills-JerryTing.jpg" alt="Coyote Hills" width="300" height="150">
+                  <figcaption> <i>A view from one of the hills</i></figcaption>
+                </figure>
+              </li>
+            </ul>
+          </li>
+          <li>
+            I have to listen to music when I’m practically doing <em>anything</em> (even studying)!
+              <ul>
+                <li>
+                  My favorite genre is <b>Hip-Hop/R&B</b> and my favorite artists include <i>Smino</i>, <i>Isaiah Rashad</i>, <i>Kid Cudi</i>, <i>Frank Ocean</i>, and <i>Young Thug</i>.
+                </li>
+                <li>
+                  I also love to listen to older music from time to time including artists like <i>Elton John</i>, the <i>Beatles</i>, and <i>Prince</i>.
+                  <ul>
+                    <li>
+                      My all-time favorite song by <i>Elton John</i> is <i>Don’t Go Breaking My Heart</i>.
+                      <div id = "youtube-video">
+                        <iframe width="560" 
+                              height="315" 
+                              src="https://www.youtube.com/embed/z0qW9P-uYfM" 
+                              frameborder="0" 
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              allowfullscreen>
+                      </iframe>
+                      </div>
+                    </li>
+                    <li>
+                      Personally, I like the remastered version better, which you can listen to by clicking on the play button.
+                      <div id = "audio-mp3">
+                        <audio 
+                          controls
+                          src="Don't Go Breaking My Heart (Remastered).mp3">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </section>
+      <hr>
+      <section>
+        <h2 id = "My Goals">My Goals</h2>
+        <p>Here are a couple of goals I set for myself in the short-term and long-term:</p>
+        <h3>Short-term</h3>
+        <ol>
+          <li>Finish this Assignment</li>
+          <li>Do well in my classes for this quarter</li>
+          <li>Build beneficial habits like waking up earlier, meditating, and exercising more frequently</li>
+          <li>Try to get an internship or a part-time job for the summer</li>
+          <li>Learn to cook!</li>
+          <li>Take skincare more seriously</li>
+        </ol>
+        <h3>Long-term</h3>
+        <ol>
+          <li>Land a decent gig as a graduate</li>
+          <li>Learn to invest and manage finances</li>
+          <li>Travel to all of the different countries I always wanted to visit</li>
+          <li>Find a role in the education sector to bridge tech and free/low-cost education to the under-priveleged</li>
+          <li><strong>Do not</strong> take a single day for granted!</li>
+        </ol>
+      </section>
+      <hr>
+      <section>
+        <h2 id = "Projects">Projects</h2>
+        <h3>foodbox</h3>
+        <div id = "Description">
+          <picture>
+            <source srcset="opening-screen.png"
+                    media="(min-width: 1600px)">
+            <img src="results-screen.png" alt="Demo of foodbox" width = "600"/>
+          </picture>
+          <h4>Description</h4>
+          <p>This was a fun, yet rewarding project of mine to dip my feet in the world of web development. 
+            This application is built with <b>Flask</b> on the backend and implements <b>Yelp's Fusion API</b> to retrieve a wealth of available food choices from user input. 
+            The frontend is built with <b>ReactJS</b> and the custom map style was made available through <b>Mapbox</b>.
+          </p>
+          <p> Because we are in the midst of a global pandemic, I also decided it would be useful to visibly emphasize the availability of takeout and delivery options for each eatery. 
+            Takeout and delivery options are clearly marked with a <span class ="check" style = "color:rgb(79, 182, 79)">green check</span> if available, or with a <span class ="x" style = "color:rgb(68, 67, 67)">grey x</span> if not.
+          </p>
+        </div>
+        <div id = "Docker">
+          <h4>Get it running!</h4>
+          <p> If you have Docker installed, just run the following command: <br>
+            <code>docker run -d -p 5000:5000 --name foodbox-app hbattu/foodbox</code>
+          </p>
+          <p>To stop the application: <br>
+            <code>docker stop foodbox-app</code>
+          </p>
+          <p> I also hosted the app using an <a href = "http://foodbox-env-2.eba-8tsswabp.us-west-1.elasticbeanstalk.com/">AWS Elastic Beanstalk instance</a></p>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h2 id = "Hobbies">Hobbies</h2>
+        <p> Some of my hobbies include:</p>
+        <div id = "hobby-reading">
+          <h3>Reading</h3>
+          <p>I like to read a lot in my spare time. The following table represents my favorite books for some particular genres.</p>
+          <table>
+            <caption>Most Recent Books I've Read</caption>
+            <colgroup>
+              <col span = "5" class="Genre">
+              <col span = "5" class="Book">
+              <col span = "5" class="Author">
+          </colgroup>
+            <tr>
+              <th scope = "col" style = "border:1px solid rgb(199, 199, 199)">Genre</th>
+              <th scope = "col" style = "border:1px solid rgb(199, 199, 199)">Book</th>
+              <th scope = "col" style = "border:1px solid rgb(199, 199, 199)">Author</th>
+            </tr>
+            <tr>
+              <td style = "border:1px solid rgb(199, 199, 199)">Historical Nonfiction</td>
+              <td style = "border:1px solid rgb(199, 199, 199)">Team of Rivals</td>
+              <td style = "border:1px solid rgb(199, 199, 199)">Doris Kearns Goodwin</td>
+            </tr>
+            <tr>
+              <td style = "border:1px solid rgb(199, 199, 199)">Autobiography</td>
+              <td style = "border:1px solid rgb(199, 199, 199)">Born a Crime</td>
+              <td style = "border:1px solid rgb(199, 199, 199)">Trevor Noah</td>
+            </tr>
+            <tr>
+              <td style = "border:1px solid rgb(199, 199, 199)">Mathematics</td>
+              <td style = "border:1px solid rgb(199, 199, 199)">How Not to be Wrong: The Power of Mathematical Thinking</td>
+              <td style = "border:1px solid rgb(199, 199, 199)">Jordan Ellenberg</td>
+            </tr>
+            <tr>
+              <td style = "border:1px solid rgb(199, 199, 199)">Non-Fiction</td>
+              <td style = "border:1px solid rgb(199, 199, 199)">Thinking Fast and Slow</td>
+              <td style = "border:1px solid rgb(199, 199, 199)">Daniel Kahneman</td>
+            </tr>
+          </table>
+          <template id="template">
+            <div>This is not to be rendered because we're not using javascript</div>
+          </template>
+        </div>
+        <div id = "working-out">
+          <h3>Fitness</h3>
+          <p>I also like to work out in my free time. Here is a totally humble video of deadlift PR.</p>
+          <video
+            controls 
+            width="125"
+            height="225">
+            <source src="deadlift.mp4"
+                    type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+        <div id = "sleeping">
+          <h3>Sleeping</h3>
+          <p> I sleep for sport. Here's a video of me sleeping through a fire alarm</p>
+          <video
+            controls 
+            width="125"
+            height="225">
+            <source src="sleeping.mp4"
+                    type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h2 id = "Some Other Stuff About Me">Some Other Stuff About Me</h2>
+        <ul>
+          <li>
+            My favorite color is <span style = "color:red">red</span>. What's yours?
+            <ul>
+              <li>
+                <div>
+                  <label for="fav-color">Your favorite color:</label>
+                  <input type="color" id="fav-color" name="fav-color" value="#e66465">
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            My favorite milkshake flavor from <i>Chick-fil-a</i> is <b>Cookies & Cream</b>. What's yours?
+            <ul>
+              <li>
+                <label for="milkshake-choice">Choose a flavor:</label>
+                <input list="milkshake-flavors" id="milkshake-choice" name="milkshake-choice" />
+                <datalist id="milkshake-flavors">
+                  <option value="Chocolate">
+                  <option value="Peppermint Chip">
+                  <option value="Cookies & Cream">
+                  <option value="Strawberry">
+                  <option value="Vanilla">
+              </datalist>
+              </li>
+            </ul>
+          </li>
+          <li>
+            A seemingly unpopular opinion. I really don't like <i>anime</i>. Check the box below if you too don't like <i>anime</i>.
+            <ul>
+              <li>
+                <div>
+                  <input type="checkbox" id="like-anime" name="like-anime" checked>
+                  <label for="like-anime"> I like anime.</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="hate-anime" name="hate-anime">
+                  <label for="hate-anime"> I don't like anime.</label>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Huge fan of bottled water, even though they're terrible for the environment. I drink about 6-7 water bottles a day. 
+            <ul>
+              <li>
+                If you like to drink bottled water as well, how many do you like to drink?
+                <div>
+                  <label for="water-bottles">Number of water bottles:</label>
+                  <input type="number" id="water-bottles" name="water-bottles" min="0" max="10">
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            I also love chicken wings. I prefer boneless myself, as I do think they have more flavor. Which do you prefer?
+            <ul>
+              <li>
+                <div>
+                  <input type="radio" id="boneless" name="wing" value="boneless"
+                         checked>
+                  <label for="boneless">Boneless</label>
+                </div>
+                <div>
+                  <input type="radio" id="bone-in" name="wing" value="bone-in">
+                  <label for="bone-in">Bone-In</label>
+                </div>
+                <div>
+                  <input type="radio" id="vegan" name="wing" value="vegan">
+                  <label for="vegan">I'm vegan</label>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            As an avid music listener, I like to turn up the bass to the highest setting. 
+            My friends don't like it as they think it ruins the audio experience. What's your ideal bass setting?
+            <ul>
+              <li>
+                <div>
+                  <input type="range" id="bass" name="bass"
+                         min="0" max="11">
+                  <label for="bass">Bass</label>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            As someone who has lived in both NorCal and SoCal, I definitely prefer NorCal. I love exploring San Francisco. 
+            What part of the state do you prefer?
+            <ul>
+              <li>
+                <div>
+                  <label for="cal-select">Choose your favorite part of the state:</label>
+                  <select id="cal-select">
+                      <optgroup label="NorCal">
+                          <option>Bay Area</option>
+                          <option>Actual Norcal/Shasta</option>
+                          <option>Sierra Nevada Area</option>
+                      </optgroup>
+                      <optgroup label="SoCal">
+                          <option>LA</option>
+                          <option>San Diego</option>
+                          <option>Central Coast</option>
+                      </optgroup>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            This is just filler text to satisfy the <i>svg</i> and <i>canvas</i> requirements
+            <ul>
+              <li>
+                <div>
+                  This is an <i>svg</i> circle filled with my favorite color.
+                  <svg width="10" height="10">
+                    <circle cx="5" cy="5" r="4" fill="red" />
+                  </svg>
+                </div>
+              </li>
+              <li>
+                <div>
+                  This is an empty <i>canvas</i> filled with my favorite color.
+                  <canvas width="10" height="10" style="background-color: red;">
+                    An alternative text describing what your canvas displays.
+                  </canvas>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <hr>
+      <section>
+        <h2 id = "Get in Touch">Get in Touch</h2>
+        <p>I'm always down to meet new people! You can use the form below to get in touch!</p>
+        <form action="mailto:someone@example.com" 
+              method="post"
+              enctype="text/plain"
+              id="email-form">
+              <fieldset>
+                <legend>Input your name and message!:</legend>
+                <label for="name">Your Name:</label><br>
+                <input type = "text" name = "name"><br>
+                <label for="email"> Type in my email address:</label><br>
+                <input type = "email" id = "email" pattern = ".+@ucsd.edu" placeholder="hbattu@ucsd.edu"><br>
+                <label type = "comment">Message</label><br>
+                <textarea id = "message" name = "message" rows="5" cols="33" placeholder="Type in your message here!"></textarea><br>
+                <button type="submit" form="email-form" value="Send">Send</button>
+              </fieldset>
+        </form>
+      </section>
+    </main>
+    <hr>
+    <footer>
+      <h2>Summary</h2>
+      <details>
+        <summary>Introduction</summary>
+        Clearly, I am a very intriguing individual
+      </details>
+      <details>
+        <summary>My Goals</summary>
+        Some lofty and ambitious long-term goals. Hopefully, they can pan out.
+      </details>
+      <details>
+        <summary>Projects</summary>
+        Literally my only project, so I have to milk it anyway I can.
+      </details>
+      <details>
+        <summary>Hobbies</summary>
+        Obviously not very unique hobbies. But they are my actual (and only) hobbies.
+      </details>
+      <details>
+        <summary>Some Other Stuff</summary>
+        This was just filler to satisfy the <i>input</i> tag requirements. But the information is true though!
+        Also apologies to anyone who are offended by anime statement.
+      </details>
+      <details>
+        <summary>Get in Touch</summary>
+        I would genuinely be creeped out if anyone uses this website to email me. 
+      </details>
+    </footer>
   </body>
 </html>
