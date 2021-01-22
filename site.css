@@ -31,3 +31,26 @@ nav ul li a {
 nav ul li a:hover:not(.active) {
     background-color: #111;
 }
+nav form input[type = search] {
+    width: 10%;
+    padding: 12px 12px;
+    /* margin: 8px 0; */
+    margin-left: 25px;
+    border-width: 1px;
+    box-sizing: border-box; 
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+nav form input[type = submit] {
+    background-color: #333;
+    width: 45px;
+    height: 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+nav form input[type = submit]:hover {
+    background-color: #111;
+}
