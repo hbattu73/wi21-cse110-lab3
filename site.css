@@ -1,5 +1,6 @@
 html,
 body {
+    /* Font and background color for all of body*/
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
@@ -8,7 +9,13 @@ body {
 header {
     text-align: left;
     padding-left: 25px;
+    height: 5vh;
+    align-items: center;
 }
+h1 {
+    color: hsl(0, 0%, 7%);
+}
+/* Format nav bar to be centralized */
 nav {
     display: block;
 }
@@ -18,17 +25,17 @@ nav ul {
     overflow: hidden;
     background-color: #333;
 }
-nav ul li {
+nav ul > li {
     float: left;
 }
-nav ul li a {
-    display: block;
+nav ul > li a {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-nav ul li a:hover:not(.active) {
+nav ul > li a:hover:not(.active) {
     background-color: #111;
 }
 nav form input[type = search] {
@@ -39,6 +46,7 @@ nav form input[type = search] {
     border-width: 1px;
     box-sizing: border-box; 
     border-radius: 5px;
+    border-color: black;
     font-family: 'Quicksand', sans-serif;
 }
 nav form input[type = submit] {
@@ -50,7 +58,78 @@ nav form input[type = submit] {
     border-radius: 5px;
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
 }
 nav form input[type = submit]:hover {
     background-color: #111;
+}
+main {
+    padding-left: 25px;
+}
+img + p {
+    font-style: italic;
+}
+.beachshot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border-style: groove;
+    border-color: rgb(32, 32, 32, 0.8);
+}
+img#coyote {
+    width: 31em;
+    height: 15em;
+    position:static;
+    border-radius: 5px;
+    border-width: 0.5mm;
+    border-color: #111;
+}
+.foodbox-pic {
+    margin: auto;
+    width: 600px;
+}
+p ~ video {
+    width: 2in;
+    height: 3.75in;
+}
+footer {
+    text-align: left;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+/* 
+   Following css is for creating an octocat at top corner of page. These chunks of
+   code were re-used from a previous project that I did, which is redirected to when you click
+   on the octocat 
+*/
+.github-corner:hover 
+.octo-arm {
+    animation:octocat-wave 560ms ease-in-out
+}
+@keyframes octocat-wave {
+    0%,100% {
+        transform:rotate(0)
+    }20%,60%
+    {
+        transform:rotate(-25deg)
+    }40%,80% {
+        transform:rotate(10deg)
+    }
+}
+@media screen and (max-width:500px) {
+    .github-corner:hover 
+    .octo-arm {
+        animation:none
+    }
+    .github-corner 
+    .octo-arm {
+        animation:octocat-wave 560ms ease-in-out
+    }
 }
